@@ -1,10 +1,16 @@
 import React from 'react';
+import styles from './Header.module.scss';
+import classNames from 'classnames/bind';
+
+const cx = classNames.bind(styles);
 
 function Header() {
     return (
-        <div>
-            <h2>Header layout</h2>
-        </div>
+        <header className={cx('wrapper')}>
+            <div className={cx('inner')}></div>
+            {/* logo */}
+            {/* search */}
+        </header>
     );
 }
 
